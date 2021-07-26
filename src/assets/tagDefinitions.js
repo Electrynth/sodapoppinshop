@@ -90,9 +90,11 @@ const tagDefinitions = {
   "Booba": "Contains booba related content.",
   "TMNT": "Contains content related to Teenage Mutant Ninja Turtles.",
   "Slay the Spire": "Contains content related to the video game Slay the Spire.",
-  "Malena": "Contains content specifically related to Malena.",
+  "Malena": "Contains content related to Malena.",
   "Boomer": "Contains content related to the boomer emote.",
-  "Happythoughts": "Contains Happythoughts or content related to them."
+  "Happythoughts": "Contains Happythoughts or content related to them.",
+  "Nick": "Contains content related to Nick",
+  "Fox": "Contains a fox."
 };
 
 export default tagDefinitions;
