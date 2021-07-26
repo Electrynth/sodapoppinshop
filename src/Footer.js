@@ -8,36 +8,47 @@ import gif from './assets/pika.gif';
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    justifyContent: 'center',
+    flexDirection: 'column',
+    alignItems: 'center',
     marginTop: 32,
     marginBottom: 16
   },
   gif: {
     width: 40,
-    height: 40
+    height: 40,
+    marginLeft: -12
   },
   title: {
     marginTop: 12,
     marginLeft: 8
+  },
+  authorRow: {
+    display: 'flex',
+    justifyContent: 'center'
   }
 }));
 
 export default function Footer() {
   const classes = useStyles();
   return (
-    <LargeTooltip
+    <div className={classes.root}>
+      <Typography variant="subtitle2">
+        Last updated: 2 July 2021
+      </Typography>
+      <LargeTooltip
       title={(
         <Typography>
           DM for bugs or suggestions <Emoji symbol="👉" label="pointRight" /> GalacticFister in soda discord.
         </Typography>
       )}
     >
-      <div className={classes.root}>
+      <div className={classes.authorRow}>
         <img alt="pika" src={gif} className={classes.gif} />
         <Typography variant="caption" className={classes.title}>
           GalacticFister
         </Typography>
       </div>
     </LargeTooltip>
+    </div>
   );
 };

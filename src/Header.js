@@ -5,14 +5,14 @@ import sodaSmile from './assets/sodaSmile.png';
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    justifyContent: 'center',
-    marginTop: 32,
-    marginBottom: 32
+    justifyContent: 'center'
   },
   png: {
     width: 40,
     height: 40,
-    borderRadius: 50
+    borderRadius: 50,
+    marginTop: 6,
+    marginBottom: 6
   }
 }));
 
