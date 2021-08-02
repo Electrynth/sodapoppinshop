@@ -33,7 +33,7 @@ export default function Footer() {
   return (
     <div className={classes.root}>
       <Typography variant="subtitle2">
-        Last updated: 2 July 2021
+        Last updated: 2 August 2021
       </Typography>
       <LargeTooltip
       title={(
