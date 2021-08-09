@@ -38,7 +38,7 @@ export default function Footer() {
       <LargeTooltip
       title={(
         <Typography>
-          DM for bugs or suggestions <Emoji symbol="👉" label="pointRight" /> GalacticFister in soda discord.
+          DM for bugs, suggestions, or any other issues <Emoji symbol="👉" label="pointRight" /> GalacticFister in soda discord.
         </Typography>
       )}
     >
