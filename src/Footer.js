@@ -33,7 +33,7 @@ export default function Footer() {
   return (
     <div className={classes.root}>
       <Typography variant="subtitle2">
-        Last updated: 2 August 2021
+        Last updated: 9 August 2021
       </Typography>
       <LargeTooltip
       title={(
@@ -44,7 +44,7 @@ export default function Footer() {
     >
       <div className={classes.authorRow}>
         <img alt="pika" src={gif} className={classes.gif} />
-        <Typography variant="caption" className={classes.title}>
+        <Typography variant="subtitle" className={classes.title}>
           GalacticFister
         </Typography>
       </div>
