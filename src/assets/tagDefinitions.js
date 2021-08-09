@@ -94,7 +94,9 @@ const tagDefinitions = {
   "Boomer": "Contains content related to the boomer emote.",
   "Happythoughts": "Contains Happythoughts or content related to them.",
   "Nick": "Contains content related to Nick",
-  "Fox": "Contains a fox."
+  "Fox": "Contains a fox.",
+  "Sonic": "Contains content related to Sonic the Hedgehog.",
+  "Red Dead": "Contains content related to the video game series Red Dead."
 };
 
 export default tagDefinitions;
