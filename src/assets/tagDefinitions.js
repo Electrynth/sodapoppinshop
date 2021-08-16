@@ -96,7 +96,12 @@ const tagDefinitions = {
   "Nick": "Contains content related to Nick",
   "Fox": "Contains a fox.",
   "Sonic": "Contains content related to Sonic the Hedgehog.",
-  "Red Dead": "Contains content related to the video game series Red Dead."
+  "Red Dead": "Contains content related to the video game series Red Dead.",
+  "Animal Crossing": "Contains content related to the video game series Animal Crossing.",
+  "Cyr": "Contains content related to Cyr.",
+  "Cyberpunk": "Contains content related to the Cyberpunk game or cyberpunk themes.",
+  "pepeD": "Contains content related to the pepeD emote.",
+  "Toilet Roll": "Contains content related to a toilet paper roll."
 };
 
 export default tagDefinitions;

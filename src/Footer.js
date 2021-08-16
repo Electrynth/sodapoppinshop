@@ -33,12 +33,12 @@ export default function Footer() {
   return (
     <div className={classes.root}>
       <Typography variant="subtitle2">
-        Last updated: 9 August 2021
+        Last updated: 15 August 2021
       </Typography>
       <LargeTooltip
       title={(
         <Typography>
-          DM for bugs, suggestions, or any other issues <Emoji symbol="👉" label="pointRight" /> GalacticFister in soda discord.
+          DM for bugs, suggestions, stale data, or any other issues <Emoji symbol="👉" label="pointRight" /> GalacticFister in soda discord.
         </Typography>
       )}
     >
