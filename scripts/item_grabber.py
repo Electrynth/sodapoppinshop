@@ -1,5 +1,9 @@
 import requests, time, json, io
 
+'''
+Grabs all the raw item data and writes it to
+'''
+
 base_url = 'https://commerce.teespring.com/v1/stores/products?slug=sodamerch&currency=USD&region=USA'
 
 all_products = []
@@ -16,7 +20,7 @@ def parse_product_pages(page_number, all_products):
 
     all_products.extend(json_response['products'])
     if json_response['next']:
-      time.sleep(1)
+      time.sleep(1) # throttle so i dont get blocked (if they even have a limiter)
       parse_product_pages(page_number + 1, all_products)
 
 parse_product_pages(1, all_products)

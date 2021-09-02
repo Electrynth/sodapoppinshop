@@ -9,13 +9,20 @@ except NameError:
 products = []
 name_to_products = {}
 name_to_tags = {}
+untagged_products = []
 
 
+tag_list = []
+tag_frequency = {}
 
-tag_list = [] # good
-tag_frequency = {} # good
-
+'''
+tags.csv is a manually made file with the fields:
+name, tag1, tag2, ... ,tagN
+'''
 with open('tags.csv') as tagfile:
+    # counts frequencies of tags in tag_frequency { (tag name): (tag frequency) }
+    # puts all tags into a list
+
     reader = csv.reader(tagfile)
     for row in reader:
         name_to_tags[row[0]] = []
@@ -30,9 +37,12 @@ with open('tags.csv') as tagfile:
                     tag_frequency[tag] = 1
 
 with open('products.json') as productfile:
+    # reads the raw product file from teespring api
     plaintext = productfile.read()
     json_data = json.loads(plaintext)
     products.extend(json_data['all_products'])
+
+    # then with product name as key, value is list of different versions of same product
     for product in products:
         if product['name'] in name_to_products:
             name_to_products[product['name']].append(product)
@@ -48,6 +58,7 @@ for product_name in name_to_products:
         product['tags'] = name_to_tags[product_name]
     else:
         product['tags'] = ['Untagged']
+        untagged_products.append(product_name)
     product['variants'] = []
     name_to_products[product_name].reverse()
     for subproduct in name_to_products[product_name]:
@@ -83,3 +94,5 @@ with open('final_products.json', 'w', encoding='utf-8') as outfile:
     json_data['tagList'].sort(key=lambda x: x['frequency'], reverse=True)
     str_ = json.dumps(json_data, indent=4, sort_keys=True, separators=(',', ': '), ensure_ascii=False)
     outfile.write(to_unicode(str_))
+
+print(untagged_products)
