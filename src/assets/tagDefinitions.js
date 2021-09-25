@@ -101,7 +101,8 @@ const tagDefinitions = {
   "Cyr": "Contains content related to Cyr.",
   "Cyberpunk": "Contains content related to the Cyberpunk game or cyberpunk themes.",
   "pepeD": "Contains content related to the pepeD emote.",
-  "Toilet Roll": "Contains content related to a toilet paper roll."
+  "Toilet Roll": "Contains content related to a toilet paper roll.",
+  "Suffering": "Contains content related to the suffer emote."
 };
 
 export default tagDefinitions;
