@@ -24,7 +24,8 @@ const useStyles = makeStyles((theme) => ({
   },
   authorRow: {
     display: 'flex',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    cursor: 'pointer'
   }
 }));
 
@@ -33,7 +34,7 @@ export default function Footer() {
   return (
     <div className={classes.root}>
       <Typography variant="subtitle2">
-        Last updated: 25 September 2021
+        Last updated: 30 September 2021
       </Typography>
       <LargeTooltip
       title={(
@@ -44,7 +45,7 @@ export default function Footer() {
     >
       <div className={classes.authorRow}>
         <img alt="pika" src={gif} className={classes.gif} />
-        <Typography variant="subtitle" className={classes.title}>
+        <Typography className={classes.title}>
           GalacticFister
         </Typography>
       </div>
