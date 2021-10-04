@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import clsx from 'clsx';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline'
 import { withWidth, Fade, TablePagination } from '@material-ui/core';
@@ -10,6 +8,7 @@ import Header from './Header';
 import Footer from './Footer';
 import TagSearchBar from './TagSearchBar';
 import NameSearchBar from './NameSearchBar';
+import ScrollArrow from './ScrollArrow';
 import logo from './assets/icon.png';
 import finalProducts from './assets/finalProducts';
 
@@ -108,6 +107,7 @@ function App({ width }) {
   return (
     <ThemeWrapper themeColor="dark">
       <CssBaseline />
+      <ScrollArrow />
       <Fade in={isLoading} timeout={{ enter: 0, exit: 500 }}>
         <img alt="loading logo" src={logo} className={classes.loaderImage} />
       </Fade>
