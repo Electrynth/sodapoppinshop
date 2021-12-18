@@ -20,7 +20,8 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     marginTop: 12,
-    marginLeft: 8
+    marginLeft: 8,
+    marginBottom: 12
   },
   authorRow: {
     display: 'flex',
@@ -39,7 +40,7 @@ export default function Footer() {
       <LargeTooltip
       title={(
         <Typography>
-          DM for bugs, suggestions, stale data, or any other issues <Emoji symbol="👉" label="pointRight" /> GalacticFister in soda discord.
+          DM for bugs, suggestions, stale data, or any other issues <Emoji symbol="👉" label="pointRight" /> GalacticFister (Nick™#0001) in soda discord.
         </Typography>
       )}
     >

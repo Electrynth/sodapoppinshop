@@ -8,7 +8,7 @@ const useStyles = makeStyles(() => ({
     display: 'flex',
     flexDirection: 'row',
     position: 'fixed',
-    width: '100%',
+    width: '25%',
     bottom: '20px',
     right: '10px',
     opacity: 0.8,
